@@ -13,14 +13,14 @@
   <div class="wrapper">
     <header>
       <h1>
-        <a href="/">Tech Blog</a>
+        <a class="header__title" href="/">Tech Blog</a>
       </h1>
-      <nav>
+      <nav class="nav">
         {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn">logout</button>
+        <a href="/dashboard" class="nav__link nav__item dash-btn">Dashboard</a>
+        <button id="logout" class="nav__link logout-btn">Logout</button>
         {{else}}
-        <a href="/login">Login</a>
+        <a href="/login" class="nav__link login-btn">Login</a>
         {{/if}}
       </nav>
     </header>
